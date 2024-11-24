@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>JavaScript Experiments</title>
+        <link rel="stylesheet" href="/styles.css" />
+    </head>
+    <body>
+        <div class="container">
+            <h1>JavaScript Experiments</h1>
+            <div class="experiments">
+                <% experiments.forEach(function(experiment) {
+                        experiment = experiment.charAt(0).toUpperCase() + experiment.slice(1); %>
+                <div class="experiment">
+                    <h2><%= experiment %></h2>
+                    <a href="/<%= encodeURI(experiment.replace(/[\(\)]/g, '')) %>/"
+                        ><button>Explore</button></a
+                    >
+                </div>
+                <% }); %>
+            </div>
+        </div>
+    </body>
+</html>

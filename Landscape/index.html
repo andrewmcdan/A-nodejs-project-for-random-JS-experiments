@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animated Landscape</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="landscape">
+    <div class="sky day">
+      <div class="stars"></div>
+      <div class="sun"></div>
+      <div class="moon"></div>
+      <div class="clouds">
+        <div class="cloud" style="animation-duration: 20s; top: 10%;"></div>
+        <div class="cloud" style="animation-duration: 25s; top: 30%; left: 20%;"></div>
+        <div class="cloud" style="animation-duration: 18s; top: 50%; left: 50%;"></div>
+        <div class="cloud" style="animation-duration: 22s; top: 15%; left: 70%;"></div>
+      </div>
+      
+    </div>
+    <div class="mountains"></div>
+    <div class="foreground"></div>
+  </div>
+  <button id="toggleMode">Switch to Night</button>
+  <script src="script.js"></script>
+</body>
+</html>
