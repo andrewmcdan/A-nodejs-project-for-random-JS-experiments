@@ -1,0 +1,58 @@
+/* styles.css */
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+  }
+  
+  #app {
+    max-width: 500px;
+    margin: 0 auto;
+    text-align: center;
+  }
+  
+  #pet-container {
+    margin: 20px 0;
+  }
+  
+  #pet-image {
+    width: 200px;
+    height: auto;
+  }
+  
+  .need {
+    margin: 10px 0;
+  }
+  
+  .pet.happy {
+    animation: happyAnimation 1s infinite;
+  }
+  
+  .pet.sad {
+    animation: sadAnimation 1s infinite;
+  }
+  
+  button {
+    margin: 5px;
+    padding: 10px 15px;
+    font-size: 1em;
+  }
+  
+  @keyframes happyAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-10px);
+    }
+  }
+  
+  @keyframes sadAnimation {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(10px);
+    }
+  }
+  

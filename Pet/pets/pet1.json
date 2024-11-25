@@ -1,0 +1,78 @@
+{
+    "name": "Sparky",
+    "type": "Robot",
+    "image": "images/sparky.svg",
+    "needs": {
+        "electricity": {
+            "current": 80,
+            "max": 100,
+            "depletionRate": 1
+        },
+        "maintenance": {
+            "current": 50,
+            "max": 100,
+            "depletionRate": 0.5
+        }
+    },
+    "miniGames": [
+        {
+            "name": "Circuit Fix",
+            "script": "miniGames/circuitFix.js",
+            "rewards": {
+                "electricity": 10,
+                "maintenance": 5
+            }
+        }
+    ],
+    "commands": [
+        {
+            "name": "Charge",
+            "script": "commands/charge.js",
+            "cost": {
+                "electricity": 10
+            }
+        },
+        {
+            "name": "Repair",
+            "script": "commands/repair.js",
+            "cost": {
+                "maintenance": 10
+            }
+        }
+    ],
+    "events": [
+        {
+            "name": "Low Battery",
+            "script": "events/lowBattery.js",
+            "condition": {
+                "electricity": 20
+            }
+        },
+        {
+            "name": "Needs Maintenance",
+            "script": "events/needsMaintenance.js",
+            "condition": {
+                "maintenance": 20
+            }
+        }
+    ],
+    "messages": {
+        "lowBattery": "I'm running low on electricity. Please charge me.",
+        "needsMaintenance": "I need maintenance. Please repair me."
+    },
+    "stats": {
+        "happiness": 100,
+        "hunger": 0,
+        "health": 100,
+        "energy": 100,
+        "experience": 0,
+        "level": 1,
+        "nextLevel": 100,
+        "currency": 0,
+        "inventory": [],
+        "achievements": [],
+        "quests": [],
+        "completedQuests": [],
+        "activeQuests": []
+    }
+}
