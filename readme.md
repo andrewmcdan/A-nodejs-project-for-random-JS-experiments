@@ -4,6 +4,8 @@ This is a collection of Javascript experiments that I work on from time to time.
 
 For most of these, I used ChatGPT to get me started. Then I fixed all of the errors that AI doesn't understand and made a bunch of modifications.
 
+See [this conversation](https://chatgpt.com/share/6743f7dc-f6d8-800d-857d-a8ec71d7e42e) for everything that ChatGPT did for me.
+
 ## Experiments
 
 - [**Progress**](./progress) - A clock that shows the current time, date, and others.
