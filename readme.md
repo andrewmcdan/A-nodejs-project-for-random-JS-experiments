@@ -194,7 +194,8 @@ Here are **50 project/experiment suggestions** ranging from simple ideas to adva
 
 ## [License](./LICENSE)
 
-Code is provided under the MIT license, copied below:
+Any experiment that uses code from other sources will have the license information in the respective folder. The rest of the code is provided under the MIT license.
+
 ```
 MIT License
 
