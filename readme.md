@@ -191,7 +191,7 @@ Here are **50 project/experiment suggestions** ranging from simple ideas to adva
 
 
 
-## License
+## [License](./LICENSE)
 
 Code is provided under the MIT license, copied below:
 ```
