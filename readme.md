@@ -17,7 +17,7 @@ For most of these, I used ChatGPT to get me started. Then I fixed all of the err
 
 ## How to run
 ```
-git clone
+git clone https://github.com/andrewmcdan/A-nodejs-project-for-random-JS-experiments.git
 cd A-nodejs-project-for-random-experiments
 npm install
 npm start
