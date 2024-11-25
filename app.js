@@ -3,7 +3,6 @@ const path = require("path");
 const app = express();
 const fs = require('fs'); // We'll use this later
 
-
 // Set EJS as the view engine
 app.set('view engine', 'ejs');
 app.set('views', path.join(__dirname, 'views'));
@@ -11,6 +10,8 @@ app.set('views', path.join(__dirname, 'views'));
 // Serve static files from the 'public' directory
 app.use(express.static(path.join(__dirname, 'public')));
 
+// TODO: Recursively search for experiments in subdirectories and make 
+// the index page display them in a tree structure
 
 // Serve static files for each experiment
 const experimentsDir = __dirname;

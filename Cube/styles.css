@@ -1,0 +1,113 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #222;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    perspective: 800px;
+    overflow: hidden;
+}
+
+.scene {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    perspective: 800px;
+}
+
+.cube {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transform-style: preserve-3d;
+    animation: rotateCube 10s infinite linear;
+}
+
+.face {
+    position: absolute;
+    width: 200px;
+    height: 200px;
+    background-color: rgba(255, 255, 255, 0.9);
+    background-size: cover;
+    background-position: center;
+    backface-visibility: hidden;
+}
+
+/* Front face */
+.face.front {
+    transform: rotateY(0deg) translateZ(20vmin);
+    background-image: url("https://picsum.photos/400/400?random=1");
+    background-size: contain;
+}
+
+/* Back face */
+.face.back {
+    transform: rotateY(180deg) translateZ(20vmin);
+    background-image: url("https://picsum.photos/400/400?random=2");
+    background-size: contain;
+}
+
+/* Right face */
+.face.right {
+    transform: rotateY(90deg) translateZ(20vmin);
+    background-image: url("https://picsum.photos/400/400?random=3");
+    background-size: contain;
+}
+
+/* Left face */
+.face.left {
+    transform: rotateY(-90deg) translateZ(20vmin);
+    background-image: url("https://picsum.photos/400/400?random=4");
+    background-size: contain;
+}
+
+/* Top face */
+.face.top {
+    transform: rotateX(90deg) translateZ(20vmin);
+    background-image: url("https://picsum.photos/400/400?random=5");
+    background-size: contain;
+}
+
+/* Bottom face */
+.face.bottom {
+    transform: rotateX(-90deg) translateZ(20vmin);
+    background-image: url("https://picsum.photos/400/400?random=6");
+    background-size: contain;
+}
+
+.cube {
+    /* Existing styles */
+    animation: both rotateCube 10s infinite linear;
+}
+
+@keyframes rotateCube {
+    from {
+        transform: rotateX(-20deg) rotateY(0deg);
+    }
+    to {
+        transform: rotateX(-20deg) rotateY(360deg) rotateZ(360deg);
+    }
+}
+
+.scene {
+    width: 40vmin;
+    height: 40vmin;
+}
+
+.face {
+    width: 40vmin;
+    height: 40vmin;
+}
+.face {
+    /* Existing styles */
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.5);
+}
+.cube {
+    will-change: transform;
+}
+
+.face {
+    transition: background 0.5s ease-out 0.1s;
+}

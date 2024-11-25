@@ -1,0 +1,34 @@
+body {
+    margin: 0;
+    padding: 0;
+    background: black;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+  }
+  
+  .game-container {
+    position: relative;
+    width: 800px;
+    height: 600px;
+    margin: 0 auto;
+  }
+  
+  #gameCanvas {
+    display: block;
+    background: black;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    z-index: 1;
+  }
+  
+  #score, #lives {
+    font-size: 18px;
+    margin: 5px 0;
+  }
+  
