@@ -13,6 +13,7 @@ For most of these, I used ChatGPT to get me started. Then I fixed all of the err
 - [**Interactive Particles**](./Interactive%20Particles) - Interactive particles will various parameters.
 - [**Cube**](./Cube) - A 3D cube with random images on each face that rotates. Clicking a face will change the image.
 - [**Space Rocks**](./Space%20Rocks) - A simple game where you control a spaceship and blast rocks.
+- [**Pet**](./Pet) - A virtual pet. ...work in progress.
 
 ## How to run
 ```
@@ -101,7 +102,7 @@ If you have any ideas for experiments or if you want to contribute to this repos
         - Allow users to adjust parameters like height and frequency.
         - Include a "fly-through" mode.
 
-7. Virtual Pet
+7. Virtual Pet - Work in Progress
     - Description: Build a virtual pet app where users can interact with and take care of a digital creature.
     - Techniques:
         - JavaScript for managing pet states (hungry, happy, tired).
