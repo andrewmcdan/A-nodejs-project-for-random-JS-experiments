@@ -7,6 +7,11 @@ const petContainer = document.getElementById("pet-container");
 const needsContainer = document.getElementById("needs-container");
 const actionsContainer = document.getElementById("actions-container");
 const minigamesContainer = document.getElementById("minigames-container");
+const minigamesRenderContainer = document.getElementById("minigames-render-container");
+const messageContainer = document.getElementById("message-container");
+
+minigamesRenderContainer.style.display = "none";
+messageContainer.style.display = "none";
 
 async function loadPet(petFile) {
     let petFileFound = false;
@@ -152,7 +157,7 @@ if(games === undefined) {
 function loadMiniGame(scriptPath) {
     if (loadedScripts.includes(scriptPath)) {
         if(games !== undefined) {
-            games[scriptPath]();
+            games[scriptPath](minigamesRenderContainer);
         }
         return;
     }
@@ -163,7 +168,7 @@ function loadMiniGame(scriptPath) {
     script.onload = () => {
         if(games !== undefined) {
             console.log(games);
-            games[scriptPath]();
+            games[scriptPath](minigamesRenderContainer);
         }
     };
 }
